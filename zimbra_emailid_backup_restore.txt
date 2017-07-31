@@ -1,0 +1,7 @@
+
+To Take Backup:- 
+/opt/zimbra/bin/zmmailbox -z -m email-id@domain.com getRestURL "//?fmt=tgz" > /mnt/backup/email-id@domain.com.tar.gz
+
+
+To Restore the email-id:-
+/opt/zimbra/bin/zmmailbox -z -m email-id@domain.com postRestURL "//?fmt=tgz&resolve=skip" /mnt/backup/email-id@domain.com.tar.gz
